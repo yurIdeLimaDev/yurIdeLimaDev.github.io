@@ -1,10 +1,10 @@
 {
-  "name": "Yuri Silva — Application Security & DevSecOps",
-  "short_name": "Yuri Silva",
+  "name": "Yuri de Lima | Application Security & DevSecOps",
+  "short_name": "Yuri de Lima",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#07110f",
-  "theme_color": "#07110f",
+  "background_color": "#f5f7f4",
+  "theme_color": "#f5f7f4",
   "icons": [
     {
       "src": "/assets/favicon.svg",

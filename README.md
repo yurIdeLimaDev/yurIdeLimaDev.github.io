@@ -1,6 +1,6 @@
-# Portfólio — Yuri Silva
+# Portfólio | Yuri de Lima
 
-Site pessoal de Yuri Silva Bezerra de Lima, com foco em Application Security,
+Site pessoal de Yuri de Lima, com foco em Application Security,
 DevSecOps e automação de segurança.
 
 ## Conteúdo
