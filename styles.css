@@ -92,26 +92,45 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  gap: 11px;
+  font-size: 0.94rem;
+  font-weight: 750;
+  letter-spacing: -0.025em;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .brand-mark {
-  display: inline-block;
-  min-width: 44px;
-  color: var(--accent);
-  font-family: "Segoe Script", "Snell Roundhand", "Brush Script MT", "Lucida Handwriting", cursive;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 0.9;
-  letter-spacing: -0.24em;
-  transform: rotate(-5deg) translateY(1px);
-  transform-origin: center;
+  display: block;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+}
+
+.brand-mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.brand-mark rect {
+  fill: var(--text);
+}
+
+.brand-mark path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.brand-y {
+  stroke: #ffffff;
+  stroke-width: 2.35;
+}
+
+.brand-slash {
+  stroke: #74a487;
+  stroke-width: 2.2;
 }
 
 .main-nav { display: flex; align-items: center; gap: 28px; }
@@ -227,6 +246,9 @@ h1 {
 
 .portrait-frame {
   position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
   padding: 0;
   border: 0;
   background: transparent;
@@ -236,7 +258,7 @@ h1 {
 .portrait-frame::before {
   content: "";
   position: absolute;
-  inset: 18px -16px -16px 20px;
+  inset: 12px -12px -12px 12px;
   z-index: -1;
   border-radius: 26px;
   background: var(--accent-soft);
@@ -245,8 +267,9 @@ h1 {
 .portrait-frame::after { content: none; }
 
 .portrait-frame img {
-  aspect-ratio: 1;
   width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
   object-position: center;
   border-radius: 24px;
@@ -440,17 +463,7 @@ h1 {
 }
 
 .contact::after {
-  content: "Y/";
-  position: absolute;
-  right: -0.05em;
-  bottom: -0.38em;
-  z-index: -1;
-  color: rgba(46, 101, 76, 0.045);
-  font-family: "Segoe Script", "Snell Roundhand", "Brush Script MT", "Lucida Handwriting", cursive;
-  font-style: normal;
-  font-size: clamp(12rem, 32vw, 34rem);
-  font-weight: 900;
-  letter-spacing: -0.14em;
+  content: none;
 }
 
 .contact > .section-index { margin-bottom: 58px; }

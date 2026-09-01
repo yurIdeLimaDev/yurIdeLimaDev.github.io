@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Y barra">
-  <rect width="64" height="64" rx="12" fill="#f5f7f4"/>
-  <text x="7" y="46" fill="#2e654c" font-family="Segoe Script, Snell Roundhand, Brush Script MT, cursive" font-size="40" font-weight="600" transform="rotate(-5 32 32)">Y/</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="Yuri de Lima">
+  <rect x="1" y="1" width="38" height="38" rx="10" fill="#17211c"/>
+  <path d="M9.5 11.5 C10.8 20.8 12.4 24.5 16.2 24.5 C20.1 24.5 22.1 19.8 23.2 11.5 M23.2 11.5 L20.4 28.2 C19.5 33.4 15.9 35.3 11.1 33.6" fill="none" stroke="#ffffff" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31.2 10.2 L27.3 29.8" fill="none" stroke="#74a487" stroke-width="2.2" stroke-linecap="round"/>
 </svg>
