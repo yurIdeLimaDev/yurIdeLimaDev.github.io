@@ -102,14 +102,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .brand-mark {
   display: inline-block;
-  min-width: 38px;
+  min-width: 44px;
   color: var(--accent);
-  font-family: "Bodoni 72", Didot, "Iowan Old Style", Baskerville, Georgia, serif;
-  font-size: 1.8rem;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.18em;
+  font-family: "Segoe Script", "Snell Roundhand", "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.24em;
+  transform: rotate(-5deg) translateY(1px);
+  transform-origin: center;
 }
 
 .main-nav { display: flex; align-items: center; gap: 28px; }
@@ -221,7 +223,7 @@ h1 {
 .signal-grid dt { font-size: clamp(1.6rem, 3vw, 2.35rem); font-weight: 760; letter-spacing: -0.045em; }
 .signal-grid dd { margin: 3px 0 0; color: var(--faint); font-size: 0.78rem; line-height: 1.45; }
 
-.profile-panel { align-self: center; display: flex; width: min(100%, 280px); flex-direction: column; justify-content: center; }
+.profile-panel { align-self: center; display: flex; width: min(100%, 260px); flex-direction: column; justify-content: center; }
 
 .portrait-frame {
   position: relative;
@@ -243,10 +245,10 @@ h1 {
 .portrait-frame::after { content: none; }
 
 .portrait-frame img {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   width: 100%;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center;
   border-radius: 24px;
   filter: saturate(0.82) contrast(1.02);
 }
@@ -444,8 +446,8 @@ h1 {
   bottom: -0.38em;
   z-index: -1;
   color: rgba(46, 101, 76, 0.045);
-  font-family: "Bodoni 72", Didot, "Iowan Old Style", Baskerville, Georgia, serif;
-  font-style: italic;
+  font-family: "Segoe Script", "Snell Roundhand", "Brush Script MT", "Lucida Handwriting", cursive;
+  font-style: normal;
   font-size: clamp(12rem, 32vw, 34rem);
   font-weight: 900;
   letter-spacing: -0.14em;
