@@ -14,10 +14,11 @@ const locales = {
     available: 'Disponível para oportunidades · remoto ou híbrido',
     pitch: 'Desenvolvo soluções para proteger aplicações e automatizar rotinas de segurança. Experiência em WAF, Threat Intelligence e automação SOC/SOAR.',
     location: 'João Pessoa, PB · Remoto ou híbrido',
-    quickFacts: 'PT / EN / ES · Ciência da Computação, UFPB · conclusão prevista: dez. 2026',
+    quickFacts: 'Formação: Ciência da Computação, UFPB · PT / EN / ES',
     focus: 'Foco: WAF, AppSec e automação SOC/SOAR',
     cv: 'Baixar CV em PDF', cvFile: '/assets/cv-yuri-de-lima-pt.pdf', view: 'Ver projetos', portrait: 'Retrato de Yuri de Lima',
-    signals: [['48', 'combinações de cenários na validação do DoBotShield'], ['~200', 'eventos por dia em integrações SOC'], ['6 h', 'economizadas por semana com automação']],
+    resultsTitle: 'Resultados no trabalho',
+    signals: [['6 h/semana', 'economizadas em tarefas operacionais', 'Automação de rotinas · Aliança Motos'], ['33%', 'menos tempo para processar documentos', 'Aplicações internas · Aliança Motos'], ['21%', 'menos tempo na resposta inicial a alertas', 'Automação de segurança · IT4US']],
     projectIndex: '01 / Projetos', projectTitle: 'O que construí e por que importa.',
     projectIntro: 'Uma visão direta do problema, da minha contribuição e do resultado. Os repositórios trazem os detalhes técnicos.',
     problem: 'Problema', solution: 'Solução', result: 'Resultado', details: 'Detalhes técnicos', repo: 'Ver repositório',
@@ -70,9 +71,10 @@ const locales = {
     skip: 'Skip to content', home: 'home', menu: 'Open menu', nav: 'Main navigation', navigation: ['Projects', 'Experience', 'Education', 'Contact'],
     available: 'Open to opportunities · remote or hybrid',
     pitch: 'I develop solutions to protect applications and automate security workflows. Experience in WAF development, Threat Intelligence and SOC/SOAR automation.',
-    location: 'João Pessoa, Brazil · Remote or hybrid', quickFacts: 'PT / EN / ES · Computer Science, UFPB · expected graduation: Dec 2026', focus: 'Focus: WAF, AppSec and SOC/SOAR automation',
+    location: 'João Pessoa, Brazil · Remote or hybrid', quickFacts: 'Education: Computer Science, UFPB · PT / EN / ES', focus: 'Focus: WAF, AppSec and SOC/SOAR automation',
     cv: 'Download resume PDF', cvFile: '/assets/cv-yuri-de-lima-en.pdf', view: 'View projects', portrait: 'Portrait of Yuri de Lima',
-    signals: [['48', 'scenario combinations in DoBotShield validation'], ['~200', 'events per day in SOC integrations'], ['6 h', 'saved per week through automation']],
+    resultsTitle: 'Results at work',
+    signals: [['6 h/week', 'saved on operational tasks', 'Workflow automation · Aliança Motos'], ['33%', 'less time processing documents', 'Internal applications · Aliança Motos'], ['21%', 'less time to the initial response to alerts', 'Security automation · IT4US']],
     projectIndex: '01 / Projects', projectTitle: 'What I built and why it matters.', projectIntro: 'The problem, my contribution and the outcome. Repositories provide the technical details.',
     problem: 'Problem', solution: 'Solution', result: 'Outcome', details: 'Technical details', repo: 'View repository',
     projects: [
@@ -117,6 +119,59 @@ const locales = {
     contactIndex: '06 / Contact', contactTitle: 'Let’s talk about the next opportunity.', contactIntro: 'Interested in Application Security, DevSecOps and security automation. Available for remote or hybrid work.', contactLabel: 'Contact channels', footer: 'Application Security · DevSecOps · Automation'
   }
 };
+locales.es = {
+  lang: 'es-ES', ogLocale: 'es_ES', path: '/es/',
+  description: 'Yuri de Lima, en João Pessoa, Brasil. Seguridad de aplicaciones, DevSecOps, WAF y automatización SOC/SOAR. Proyectos, experiencia, formación y currículum en PDF.',
+  skip: 'Saltar al contenido', home: 'inicio', menu: 'Abrir menú', nav: 'Navegación principal', navigation: ['Proyectos', 'Experiencia', 'Formación', 'Contacto'],
+  available: 'Disponible para oportunidades · remoto o híbrido',
+  pitch: 'Desarrollo soluciones para proteger aplicaciones y automatizar tareas de seguridad. Experiencia en WAF, inteligencia de amenazas y automatización SOC/SOAR.',
+  location: 'João Pessoa, Brasil · Remoto o híbrido', quickFacts: 'Formación: Ciencia de la Computación, UFPB · PT / EN / ES', focus: 'Especialización: WAF, AppSec y automatización SOC/SOAR',
+  cv: 'Descargar currículum PDF', cvFile: '/assets/cv-yuri-de-lima-es.pdf', view: 'Ver proyectos', portrait: 'Retrato de Yuri de Lima',
+  resultsTitle: 'Resultados en el trabajo',
+  signals: [['6 h/semana', 'ahorradas en tareas operativas', 'Automatización de procesos · Aliança Motos'], ['33%', 'menos tiempo para procesar documentos', 'Aplicaciones internas · Aliança Motos'], ['21%', 'menos tiempo en la respuesta inicial a alertas', 'Automatización de seguridad · IT4US']],
+  projectIndex: '01 / Proyectos', projectTitle: 'Qué he construido y por qué importa.', projectIntro: 'El problema, mi contribución y el resultado. Los repositorios incluyen los detalles técnicos.',
+  problem: 'Problema', solution: 'Solución', result: 'Resultado', details: 'Detalles técnicos', repo: 'Ver repositorio',
+  projects: [
+    {name: 'DoBotShield', type: 'Seguridad de aplicaciones', state: 'Activo', status: 'active', url: '/DoBotShieldV2', tags: ['Go', 'WAF', 'Docker', 'GitHub Actions'],
+      problem: 'Proteger aplicaciones existentes sin reescribir su código.', solution: 'Desarrollé una capa que inspecciona el tráfico y aplica reglas de protección.', result: 'Validación en 48 combinaciones de escenarios, con evidencias y limitaciones documentadas.',
+      detail: 'WAF y proxy inverso en Go con inspección HTTP/WebSocket, normalización de payloads, límites de tasa y controles IP/CIDR. Comparación de ocho objetivos con SQLMap, OWASP ZAP, Commix, XSStrike, testssl.sh y wrk.'},
+    {name: 'Detección de cráteres lunares', type: 'Visión por computador', url: '/ID-Crateras-Lunares', tags: ['Go', 'Canny', 'Hough'],
+      problem: 'Identificar y medir cráteres en imágenes de la Luna.', solution: 'Implementé las etapas de detección sin bibliotecas externas de visión por computador.', result: 'Un proceso explicable para detectar cráteres de entre 5 y 20 km.',
+      note: 'Relevancia para AppSec: demuestra razonamiento de detección y validación de reglas, útil también en el desarrollo de un WAF. Es un proyecto académico, no una herramienta de seguridad.', detail: 'Imágenes LRO WAC, detección de bordes Canny y transformada de Hough con la biblioteca estándar de Go.'},
+    {name: 'IA como Pool', type: 'Sistemas distribuidos', url: '/-IA_como_Pool', tags: ['FastAPI', 'RabbitMQ', 'Redis', 'C4'],
+      problem: 'Organizar el procesamiento de tareas de IA y prever fallos.', solution: 'Contribuí a la documentación de la arquitectura y a los diagramas de los servicios.', result: 'Flujos de procesamiento, recuperación y responsabilidades documentados para el equipo.',
+      detail: 'Arquitectura asíncrona con Redis, PostgreSQL, RabbitMQ, reintentos, DLQ, circuit breaker y cache-aside. Mi contribución se centró en la documentación y los diagramas C4.'},
+    {name: 'Canny Gabor Di Zenzo', type: 'Procesamiento de imágenes', url: '/PDI-Filtros', tags: ['Python', 'NumPy', '38 pruebas'],
+      problem: 'Comparar formas de identificar contornos en imágenes en color.', solution: 'Implementé y comparé algoritmos de detección de bordes.', result: 'Una comparación reproducible respaldada por 38 pruebas.',
+      detail: 'Canny clásico y un enfoque vectorial para imágenes en color, con correlación, supresión de no máximos e histéresis implementadas desde cero.'},
+    {name: 'Vexkeep', type: 'Investigación aplicada en seguridad', state: 'En desarrollo', status: 'development', tags: ['Go', 'AppSec', 'Supply chain'],
+      problem: 'Investigar y priorizar problemas de seguridad con decisiones trazables.', solution: 'Desarrollo de un flujo con ejecución aislada, políticas y revisión humana.', result: 'Proyecto en desarrollo, aún sin resultados de producción publicados.',
+      detail: 'Políticas versionadas, evidencias normalizadas y revisión humana final. Repositorio privado; solo se publica una descripción general.'}
+  ],
+  methodIndex: '02 / Cómo trabajo', methodTitle: 'Claridad, colaboración y criterio.', methodIntro: 'Hábitos que orientan mi trabajo técnico y la colaboración con otras personas.',
+  principles: [
+    ['Comunicación técnica', 'Explico el problema, las evidencias y los límites de la solución para apoyar decisiones, también de quienes no trabajan en seguridad.'],
+    ['Trabajo en equipo', 'Documento procesos y decisiones para que otras personas puedan revisar, continuar y mantener el trabajo.'],
+    ['Pensamiento crítico', 'Compruebo hipótesis, comparo resultados y distingo los riesgos confirmados de las suposiciones antes de recomendar una acción.']
+  ],
+  experienceIndex: '03 / Experiencia', experienceTitle: 'Seguridad aplicada al trabajo diario.', experienceIntro: 'Experiencias ordenadas por la fecha de finalización más reciente. La investigación en LIM coincidió con mis prácticas en Aliança Motos.',
+  roles: [
+    ['may. 2025 a ago. 2025', 'Vultus Cybersecurity Ecosystem', 'Prácticas en inteligencia de amenazas', 'Recopilación y análisis de unos 150 indicadores de amenazas al mes, correlación con MITRE ATT&CK e informes para apoyar la detección y la respuesta.', ['19% menos tiempo en la priorización de alertas', '20% menos retrabajo al organizar evidencias']],
+    ['may. 2024 a abr. 2025', 'Aliança Motos', 'Prácticas de TI, automatización y desarrollo', 'Aplicaciones en Python y Streamlit para procesar documentos, conciliar registros y generar informes. Automatización de tareas de catálogo con JavaScript.', ['6 horas ahorradas por semana', '33% menos tiempo de procesamiento']],
+    ['sept. 2024 a nov. 2024', 'LIM | Laboratorio de Interacción y Medios', 'Investigador asociado', 'Puesto temporal e híbrido en diseño de software y proyectos de investigación.', ['Investigación simultánea a las prácticas en Aliança Motos']],
+    ['ago. 2023 a dic. 2023', 'IT4US Cyber Security', 'Prácticas de automatización de playbooks de seguridad', 'Automatización de procedimientos de triaje y respuesta con SOAR, scripts e integraciones REST para unos 200 eventos al día.', ['31% de las tareas repetitivas automatizadas', '21% menos tiempo en la respuesta inicial']]
+  ],
+  skillsIndex: '04 / Competencias', skillsTitle: 'Base técnica para investigar y construir.',
+  skills: [
+    ['Seguridad de aplicaciones', 'Seguridad web/API, OWASP Top 10, WAF, SQLMap, OWASP ZAP y validación de controles.'],
+    ['Operaciones de seguridad', 'Inteligencia de amenazas, OSINT, IOC/TTP, MITRE ATT&CK, SOAR, SIEM y automatización de respuesta.'],
+    ['Ingeniería y DevSecOps', 'Go, Python, JavaScript, API REST, FastAPI, Streamlit, pruebas, Git, Docker, Linux y GitHub Actions.'],
+    ['Datos y mensajería', 'PostgreSQL, Redis, RabbitMQ, SQL, SPARQL y procesamiento de documentos y hojas de cálculo.']
+  ],
+  educationIndex: '05 / Formación e idiomas', educationTitle: 'Formación académica e idiomas de trabajo.', degree: 'Grado en Ciencia de la Computación', university: 'Universidad Federal de Paraíba (UFPB)', expected: 'En curso · finalización prevista en diciembre de 2026',
+  languages: [['Portugués', 'Nativo'], ['Inglés', 'Fluido'], ['Español', 'Fluido']],
+  contactIndex: '06 / Contacto', contactTitle: 'Hablemos de la próxima oportunidad.', contactIntro: 'Interés en seguridad de aplicaciones, DevSecOps y automatización de seguridad. Disponible para trabajo remoto o híbrido.', contactLabel: 'Canales de contacto', footer: 'Seguridad de aplicaciones · DevSecOps · Automatización'
+};
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
 const external = (url, label, cls = '') => `<a class="${cls}" href="${url}" target="_blank" rel="noopener noreferrer">${esc(label)} <span aria-hidden="true">↗</span></a>`;
 const heading = (id, index, title, intro = '') => `<div class="section-heading"><p class="section-index">${esc(index)}</p><h2 id="${id}">${esc(title)}</h2>${intro ? `<p>${esc(intro)}</p>` : ''}</div>`;
@@ -135,6 +190,7 @@ for (const [lang, d] of Object.entries(locales)) {
   <title>${esc(title)}</title><meta name="description" content="${esc(d.description)}"><meta name="author" content="Yuri de Lima">
   <link rel="canonical" href="${url}">
   <link rel="alternate" hreflang="pt-BR" href="${origin}/"><link rel="alternate" hreflang="en" href="${origin}/en/"><link rel="alternate" hreflang="x-default" href="${origin}/">
+  <link rel="alternate" hreflang="es-ES" href="${origin}/es/">
   <meta property="og:type" content="website"><meta property="og:locale" content="${d.ogLocale}"><meta property="og:site_name" content="Yuri de Lima">
   <meta property="og:title" content="Yuri de Lima | Application Security &amp; DevSecOps"><meta property="og:description" content="${esc(d.description)}"><meta property="og:url" content="${url}">
   <meta property="og:image" content="${origin}/assets/og.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1731"><meta property="og:image:height" content="909"><meta property="og:image:alt" content="Yuri de Lima, Application Security and DevSecOps">
@@ -146,7 +202,7 @@ for (const [lang, d] of Object.entries(locales)) {
   <a class="skip-link" href="#conteudo">${d.skip}</a>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Yuri de Lima, ${d.home}"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 36" focusable="false"><path d="M4 5 L13.5 17.5 L23 5 M13.5 17.5 L13.5 31"/><path d="M29.5 5 L29.5 31 L43.5 31"/></svg></span><span>Yuri de Lima</span></a>
-    <div class="header-controls"><a class="language-toggle" href="${d.other}" hreflang="${lang === 'pt' ? 'en' : 'pt-BR'}" lang="${lang === 'pt' ? 'en' : 'pt-BR'}" aria-label="${d.switchLabel}">${d.switchText}</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="sr-only">${d.menu}</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button></div>
+    <div class="header-controls"><nav class="language-switch" aria-label="${lang === 'pt' ? 'Idioma' : lang === 'en' ? 'Language' : 'Idioma'}">${Object.entries(locales).map(([key,value])=>`<a class="language-toggle" href="${value.path}" hreflang="${value.lang}" lang="${value.lang}" ${key === lang ? 'aria-current="page"' : ''} aria-label="${key === 'pt' ? 'Português' : key === 'en' ? 'English' : 'Español'}">${key.toUpperCase()}</a>`).join('')}</nav><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="sr-only">${d.menu}</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button></div>
     <nav id="main-nav" class="main-nav" aria-label="${d.nav}">${['trabalhos','experiencia','formacao','contato'].map((id,i)=>`<a ${i===3?'class="nav-cta" ':''}href="#${id}">${d.navigation[i]}</a>`).join('')}</nav>
   </header>
   <main id="conteudo">
@@ -157,9 +213,9 @@ for (const [lang, d] of Object.entries(locales)) {
         <h1 id="hero-title">Yuri de Lima <span>Application Security &amp; DevSecOps</span></h1>
         <p class="hero-location">${d.location}</p><p class="hero-facts">${d.quickFacts}</p><p class="hero-focus">${d.focus}</p>
         <div class="hero-actions"><a class="button button-primary" href="${d.cvFile}" download>${d.cv}</a>${external(linkedin,'LinkedIn','button button-secondary')}<a class="text-link" href="#trabalhos">${d.view}</a></div>
-        <dl class="signal-grid">${d.signals.map(([n,t])=>`<div><dt>${n}</dt><dd>${t}</dd></div>`).join('')}</dl>
       </div>
       <aside class="profile-panel" aria-label="Yuri de Lima"><div class="portrait-frame"><img src="/assets/yuri-silva.jpg" alt="${d.portrait}" width="640" height="640" fetchpriority="high"></div><div class="profile-meta"><p>João Pessoa · PB · ${lang === 'en' ? 'Brazil' : 'Brasil'}</p></div></aside>
+      <div class="results-summary" aria-labelledby="results-title"><h2 id="results-title">${d.resultsTitle}</h2><dl class="results-grid">${d.signals.map(([n,t,context])=>`<div><dt>${esc(t)}</dt><dd class="result-value">${n}</dd><dd class="result-context">${esc(context)}</dd></div>`).join('')}</dl></div>
     </section>
     <section id="trabalhos" class="projects section-shell" aria-labelledby="projects-title">
       ${heading('projects-title',d.projectIndex,d.projectTitle,d.projectIntro)}
@@ -174,6 +230,6 @@ for (const [lang, d] of Object.entries(locales)) {
   <footer class="site-footer section-shell"><p>© <span data-year>2026</span> Yuri de Lima</p><p>${d.footer}</p></footer>
 </body></html>
 `;
-  mkdirSync(lang === 'en' ? 'en' : '.', {recursive: true});
-  writeFileSync(lang === 'en' ? 'en/index.html' : 'index.html', html);
+  mkdirSync(lang === 'pt' ? '.' : lang, {recursive: true});
+  writeFileSync(lang === 'pt' ? 'index.html' : `${lang}/index.html`, html);
 }

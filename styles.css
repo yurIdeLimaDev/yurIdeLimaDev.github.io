@@ -22,7 +22,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
   color: var(--text);
   background: var(--bg);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -574,6 +574,24 @@ h1 {
 }
 
 /* Recruiter profile: compact introduction, clear actions and progressive detail. */
+.language-switch { display: flex; gap: 2px; }
+.language-switch .language-toggle { padding: 8px; border-color: transparent; }
+.language-toggle[aria-current="page"] { background: var(--accent-soft); color: var(--accent); }
+.results-summary { grid-column: 1 / -1; }
+.results-summary h2 { margin: 0 0 22px; font-size: 1.2rem; letter-spacing: -.02em; }
+.results-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; gap: 16px; }
+.results-grid > div { display: flex; flex-direction: column; padding: 26px; border-radius: 16px; background: var(--bg-raised); }
+.results-grid dt { max-width: 260px; font-size: 1rem; font-weight: 600; line-height: 1.5; }
+.results-grid dd { margin: 0; }
+.results-grid .result-value { order: -1; margin-bottom: 10px; color: var(--accent); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 750; letter-spacing: -.035em; line-height: 1.2; }
+.results-grid .result-context { margin-top: 14px; color: var(--muted); font-size: .875rem; }
+@media (max-width: 680px) {
+  .results-grid { grid-template-columns: 1fr; gap: 12px; }
+  .results-grid > div { padding: 22px; }
+  .header-controls { gap: 4px; }
+  .brand { gap: 8px; font-size: .85rem; }
+}
+@media (max-width: 360px) { .brand > span:last-child { display: none; } }
 :root { --faint: #5f6e65; color-scheme: light dark; }
 section[id] { scroll-margin-top: 100px; }
 .header-controls { display: flex; align-items: center; gap: 12px; order: 3; }
