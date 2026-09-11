@@ -21,5 +21,16 @@ python -m http.server 4173
 
 ## Publicação
 
+## Edição dos idiomas
+
+O conteúdo em português e inglês fica em `scripts/build-site.mjs`.
+Após editar, execute `node scripts/build-site.mjs` para atualizar `index.html`
+e `en/index.html`. As duas páginas são HTML estático e não dependem de JavaScript
+para exibir o conteúdo. Os currículos de cada idioma ficam em `assets/`.
+
+O visual compartilhado fica em `styles.css` e o menu em `script.js`.
+
+## GitHub Pages
+
 O repositório `yurIdeLimaDev.github.io` é publicado diretamente pelo GitHub
 Pages a partir da branch `main`.
