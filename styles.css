@@ -617,7 +617,14 @@ section[id] { scroll-margin-top: 100px; }
 .profile-panel { width: 240px; }
 .portrait-frame img { aspect-ratio: 1; object-fit: cover; }
 .projects, .method, .experience, .capabilities, .education, .contact { padding-block: 72px; }
-.section-heading { margin-bottom: 36px; }
+.section-heading { margin-bottom: 36px; grid-template-columns: 1fr; gap: 18px; }
+.section-heading > p:last-child:not(.section-index) { max-width: 850px; margin: 0; font-size: 1.2rem; line-height: 1.65; }
+.principle-list p, .project-story dd, .project-content > p, details p,
+.timeline-item > div > p:not(.timeline-company), .capability-grid article > p,
+.education-strip p, .language-list { font-size: 1.125rem; line-height: 1.7; }
+.project-story dt { font-size: 1rem; }
+.project-relevance { font-size: 1.0625rem !important; }
+.impact-list li { font-size: 1rem; }
 .section-heading h2 { font-size: clamp(2rem, 3.6vw, 3.2rem); line-height: 1.1; }
 .section-index, .project-type, .principle-number, .timeline-date, .timeline-company { font-size: .875rem; letter-spacing: .035em; }
 .project-card { min-height: 0; transition: transform 180ms ease, box-shadow 180ms ease; }
@@ -628,7 +635,7 @@ section[id] { scroll-margin-top: 100px; }
 .state-development { background: #f5e9d0; color: #725115; }
 .project-story { margin: 0; }
 .project-story > div { margin-block: 14px; }
-.project-story dt { font-weight: 700; font-size: .875rem; color: var(--text); }
+.project-story dt { font-weight: 700; font-size: 1rem; color: var(--text); }
 .project-story dd { margin: 2px 0 0; color: var(--muted); }
 .project-relevance { padding-left: 14px; border-left: 2px solid var(--line); font-size: .9375rem; color: var(--muted); }
 details { margin-top: 20px; color: var(--muted); }
@@ -637,7 +644,7 @@ details p { margin-top: 12px; }
 .tag-list li { font-size: .8125rem; }
 .timeline-item { grid-template-columns: 190px minmax(0, 1fr); gap: 28px; background: var(--bg-raised); }
 .timeline-item h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); line-height: 1.2; }
-.impact-list li { font-size: .875rem; }
+.impact-list li { font-size: 1rem; }
 .capability-grid article { min-height: 0; }
 .capability-grid h3, .education-strip h3 { font-size: 1.5rem; line-height: 1.25; }
 .education-strip { margin-top: 0; }

@@ -177,6 +177,12 @@ const external = (url, label, cls = '') => `<a class="${cls}" href="${url}" targ
 const heading = (id, index, title, intro = '') => `<div class="section-heading"><p class="section-index">${esc(index)}</p><h2 id="${id}">${esc(title)}</h2>${intro ? `<p>${esc(intro)}</p>` : ''}</div>`;
 
 for (const [lang, d] of Object.entries(locales)) {
+  d.cv = {pt: 'Currículo', en: 'Resume', es: 'Currículum'}[lang];
+  for (const key of ['projectIndex', 'methodIndex', 'experienceIndex', 'skillsIndex', 'educationIndex', 'contactIndex']) {
+    d[key] = d[key].replace(/^\d+\s*\/\s*/, '');
+  }
+  // Only DoBotShield loses its status badge; preserve Vexkeep's presentation.
+  d.projects[0].state = null;
   const url = origin + d.path;
   const title = 'Yuri de Lima - AppSec Engineer | João Pessoa';
   const person = {'@context':'https://schema.org','@type':'Person','@id':origin+'/#person',name:'Yuri de Lima',url:origin+'/',image:origin+'/assets/yuri-silva.jpg',jobTitle:'Application Security & DevSecOps',email:'mailto:'+email,sameAs:[github,linkedin],address:{'@type':'PostalAddress',addressLocality:'João Pessoa',addressRegion:'PB',addressCountry:'BR'},affiliation:{'@type':'CollegeOrUniversity',name:'Universidade Federal da Paraíba'},knowsLanguage:['pt-BR','en','es'],knowsAbout:['Application Security','DevSecOps','WAF','Threat Intelligence','SOC','SOAR','Security Automation','Go','Python']};
