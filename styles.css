@@ -583,7 +583,7 @@ h1 {
 .results-grid > div { display: flex; flex-direction: column; padding: 26px; border-radius: 16px; background: var(--bg-raised); }
 .results-grid dt { max-width: 260px; font-size: 1rem; font-weight: 600; line-height: 1.5; }
 .results-grid dd { margin: 0; }
-.results-grid .result-value { order: -1; margin-bottom: 10px; color: var(--accent); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 750; letter-spacing: -.035em; line-height: 1.2; }
+.results-grid .result-value { order: -1; margin-bottom: 10px; color: var(--accent); font-size: clamp(1.55rem, 2.2vw, 2rem); font-weight: 750; letter-spacing: -.035em; line-height: 1.2; overflow-wrap: anywhere; }
 .results-grid .result-context { margin-top: 14px; color: var(--muted); font-size: .875rem; }
 @media (max-width: 680px) {
   .results-grid { grid-template-columns: 1fr; gap: 12px; }

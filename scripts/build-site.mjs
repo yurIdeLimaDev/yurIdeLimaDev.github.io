@@ -4,7 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 const origin = 'https://yuridelimadev.github.io';
 const github = 'https://github.com/yurIdeLimaDev';
 const linkedin = 'https://www.linkedin.com/in/yuridelima';
-const email = 'yuri.silva.bezerra.lima@academico.ufpb.br';
+const email = 'yuridelimadev@vexkeep.com';
 const locales = {
   pt: {
     lang: 'pt-BR', ogLocale: 'pt_BR', path: '/', other: '/en/', switchLabel: 'Read in English', switchText: 'EN',
@@ -16,9 +16,9 @@ const locales = {
     location: 'João Pessoa, PB · Remoto ou híbrido',
     quickFacts: 'Formação: Ciência da Computação, UFPB · PT / EN / ES',
     focus: 'Foco: WAF, AppSec e automação SOC/SOAR',
-    cv: 'Baixar CV em PDF', cvFile: '/assets/cv-yuri-de-lima-pt.pdf', view: 'Ver projetos', portrait: 'Retrato de Yuri de Lima',
+    view: 'Ver projetos', portrait: 'Retrato de Yuri de Lima',
     resultsTitle: 'Resultados no trabalho',
-    signals: [['6 h/semana', 'economizadas em tarefas operacionais', 'Automação de rotinas · Aliança Motos'], ['33%', 'menos tempo para processar documentos', 'Aplicações internas · Aliança Motos'], ['21%', 'menos tempo na resposta inicial a alertas', 'Automação de segurança · IT4US']],
+    signals: [['Automação', 'de rotinas de documentos e catálogos', 'Ferramentas internas · Aliança Motos'], ['Conciliação', 'de registros e geração de relatórios', 'Aplicações em Python · Aliança Motos'], ['Triagem', 'com fluxos de resposta documentados', 'Playbooks SOAR · IT4US']],
     projectIndex: '01 / Projetos', projectTitle: 'O que construí e por que importa.',
     projectIntro: 'Uma visão direta do problema, da minha contribuição e do resultado. Os repositórios trazem os detalhes técnicos.',
     problem: 'Problema', solution: 'Solução', result: 'Resultado', details: 'Detalhes técnicos', repo: 'Ver repositório',
@@ -48,10 +48,10 @@ const locales = {
     experienceIndex: '03 / Experiência', experienceTitle: 'Segurança aplicada ao trabalho diário.',
     experienceIntro: 'Experiências organizadas pelo término mais recente. A pesquisa no LIM ocorreu durante o período na Aliança Motos.',
     roles: [
-      ['mai. 2025 a ago. 2025', 'Vultus Cybersecurity Ecosystem', 'Estágio em Threat Intelligence', 'Coleta e análise de cerca de 150 indicadores de ameaça por mês, correlação com MITRE ATT&CK e relatórios para apoiar a detecção e a resposta.', ['19% menos tempo na priorização de alertas', '20% menos retrabalho na organização de evidências']],
-      ['mai. 2024 a abr. 2025', 'Aliança Motos', 'Estágio em TI, automação e desenvolvimento', 'Aplicações em Python e Streamlit para processar documentos, conferir registros e produzir relatórios. Automação de rotinas de catálogo com JavaScript.', ['6 h por semana economizadas', '33% menos tempo de processamento']],
+      ['mai. 2025 a ago. 2025', 'Vultus Cybersecurity Ecosystem', 'Estágio em Threat Intelligence', 'Coleta e análise de indicadores de ameaça, correlação com MITRE ATT&CK e relatórios para apoiar a detecção e a resposta.', ['Evidências contextualizadas para priorização de alertas', 'Achados organizados em relatórios de inteligência']],
+      ['mai. 2024 a abr. 2025', 'Aliança Motos', 'Estágio em TI, automação e desenvolvimento', 'Aplicações em Python e Streamlit para processar documentos, conferir registros e produzir relatórios. Automação de rotinas de catálogo com JavaScript.', ['Etapas manuais substituídas por automação', 'Conciliação de registros e relatórios em Excel']],
       ['set. 2024 a nov. 2024', 'LIM | Laboratório de Interação e Mídia', 'Pesquisador associado', 'Atuação temporária e híbrida em design de software e projetos de pesquisa.', ['Pesquisa simultânea ao estágio na Aliança Motos']],
-      ['ago. 2023 a dez. 2023', 'IT4US Cyber Security', 'Estágio em automação de playbooks de segurança', 'Automação de procedimentos de triagem e resposta com SOAR, scripts e integrações REST para cerca de 200 eventos por dia.', ['31% das etapas repetitivas automatizadas', '21% menos tempo na resposta inicial']]
+      ['ago. 2023 a dez. 2023', 'IT4US Cyber Security', 'Estágio em automação de playbooks de segurança', 'Automação de procedimentos de triagem e resposta com SOAR, scripts e integrações REST para normalizar eventos.', ['Fluxos de triagem documentados', 'Etapas repetitivas automatizadas']]
     ],
     skillsIndex: '04 / Competências', skillsTitle: 'Base técnica para investigar e construir.',
     skills: [
@@ -72,9 +72,9 @@ const locales = {
     available: 'Open to opportunities · remote or hybrid',
     pitch: 'I develop solutions to protect applications and automate security workflows. Experience in WAF development, Threat Intelligence and SOC/SOAR automation.',
     location: 'João Pessoa, Brazil · Remote or hybrid', quickFacts: 'Education: Computer Science, UFPB · PT / EN / ES', focus: 'Focus: WAF, AppSec and SOC/SOAR automation',
-    cv: 'Download resume PDF', cvFile: '/assets/cv-yuri-de-lima-en.pdf', view: 'View projects', portrait: 'Portrait of Yuri de Lima',
+    view: 'View projects', portrait: 'Portrait of Yuri de Lima',
     resultsTitle: 'Results at work',
-    signals: [['6 h/week', 'saved on operational tasks', 'Workflow automation · Aliança Motos'], ['33%', 'less time processing documents', 'Internal applications · Aliança Motos'], ['21%', 'less time to the initial response to alerts', 'Security automation · IT4US']],
+    signals: [['Automation', 'of document and catalog workflows', 'Internal tools · Aliança Motos'], ['Reconciliation', 'of records and report generation', 'Python applications · Aliança Motos'], ['Triage', 'with documented response workflows', 'SOAR playbooks · IT4US']],
     projectIndex: '01 / Projects', projectTitle: 'What I built and why it matters.', projectIntro: 'The problem, my contribution and the outcome. Repositories provide the technical details.',
     problem: 'Problem', solution: 'Solution', result: 'Outcome', details: 'Technical details', repo: 'View repository',
     projects: [
@@ -102,10 +102,10 @@ const locales = {
     ],
     experienceIndex: '03 / Experience', experienceTitle: 'Security in day-to-day work.', experienceIntro: 'Roles ordered by most recent end date. The LIM research role overlapped with my internship at Aliança Motos.',
     roles: [
-      ['May 2025 to Aug 2025', 'Vultus Cybersecurity Ecosystem', 'Threat Intelligence Intern', 'Collected and analyzed approximately 150 threat indicators per month, mapped evidence to MITRE ATT&CK and produced reports to support detection and response.', ['19% less time prioritizing alerts', '20% less rework organizing evidence']],
-      ['May 2024 to Apr 2025', 'Aliança Motos', 'IT, Automation and Development Intern', 'Python and Streamlit applications to process documents, reconcile records and produce reports. JavaScript automation for catalog workflows.', ['6 hours saved per week', '33% less processing time']],
+      ['May 2025 to Aug 2025', 'Vultus Cybersecurity Ecosystem', 'Threat Intelligence Intern', 'Collected and analyzed threat indicators, mapped evidence to MITRE ATT&CK and produced reports to support detection and response.', ['Evidence contextualized for alert prioritization', 'Findings organized into intelligence reports']],
+      ['May 2024 to Apr 2025', 'Aliança Motos', 'IT, Automation and Development Intern', 'Python and Streamlit applications to process documents, reconcile records and produce reports. JavaScript automation for catalog workflows.', ['Manual steps replaced with automation', 'Record reconciliation and Excel reports']],
       ['Sep 2024 to Nov 2024', 'LIM | Laboratory of Interaction and Media', 'Associate Researcher', 'Temporary, hybrid role in software design and research projects.', ['Research alongside the Aliança Motos internship']],
-      ['Aug 2023 to Dec 2023', 'IT4US Cyber Security', 'Security Playbook Automation Intern', 'Automated triage and response procedures with SOAR, scripts and REST integrations for approximately 200 events per day.', ['31% of repetitive steps automated', '21% less time to initial response']]
+      ['Aug 2023 to Dec 2023', 'IT4US Cyber Security', 'Security Playbook Automation Intern', 'Automated triage and response procedures with SOAR, scripts and REST integrations to normalize events.', ['Documented triage workflows', 'Automated repetitive steps']]
     ],
     skillsIndex: '04 / Skills', skillsTitle: 'Technical foundations to investigate and build.',
     skills: [
@@ -126,9 +126,9 @@ locales.es = {
   available: 'Disponible para oportunidades · remoto o híbrido',
   pitch: 'Desarrollo soluciones para proteger aplicaciones y automatizar tareas de seguridad. Experiencia en WAF, inteligencia de amenazas y automatización SOC/SOAR.',
   location: 'João Pessoa, Brasil · Remoto o híbrido', quickFacts: 'Formación: Ciencia de la Computación, UFPB · PT / EN / ES', focus: 'Especialización: WAF, AppSec y automatización SOC/SOAR',
-  cv: 'Descargar currículum PDF', cvFile: '/assets/cv-yuri-de-lima-es.pdf', view: 'Ver proyectos', portrait: 'Retrato de Yuri de Lima',
+  view: 'Ver proyectos', portrait: 'Retrato de Yuri de Lima',
   resultsTitle: 'Resultados en el trabajo',
-  signals: [['6 h/semana', 'ahorradas en tareas operativas', 'Automatización de procesos · Aliança Motos'], ['33%', 'menos tiempo para procesar documentos', 'Aplicaciones internas · Aliança Motos'], ['21%', 'menos tiempo en la respuesta inicial a alertas', 'Automatización de seguridad · IT4US']],
+  signals: [['Automatización', 'de procesos de documentos y catálogos', 'Herramientas internas · Aliança Motos'], ['Conciliación', 'de registros y generación de informes', 'Aplicaciones en Python · Aliança Motos'], ['Triaje', 'con flujos de respuesta documentados', 'Playbooks SOAR · IT4US']],
   projectIndex: '01 / Proyectos', projectTitle: 'Qué he construido y por qué importa.', projectIntro: 'El problema, mi contribución y el resultado. Los repositorios incluyen los detalles técnicos.',
   problem: 'Problema', solution: 'Solución', result: 'Resultado', details: 'Detalles técnicos', repo: 'Ver repositorio',
   projects: [
@@ -156,10 +156,10 @@ locales.es = {
   ],
   experienceIndex: '03 / Experiencia', experienceTitle: 'Seguridad aplicada al trabajo diario.', experienceIntro: 'Experiencias ordenadas por la fecha de finalización más reciente. La investigación en LIM coincidió con mis prácticas en Aliança Motos.',
   roles: [
-    ['may. 2025 a ago. 2025', 'Vultus Cybersecurity Ecosystem', 'Prácticas en inteligencia de amenazas', 'Recopilación y análisis de unos 150 indicadores de amenazas al mes, correlación con MITRE ATT&CK e informes para apoyar la detección y la respuesta.', ['19% menos tiempo en la priorización de alertas', '20% menos retrabajo al organizar evidencias']],
-    ['may. 2024 a abr. 2025', 'Aliança Motos', 'Prácticas de TI, automatización y desarrollo', 'Aplicaciones en Python y Streamlit para procesar documentos, conciliar registros y generar informes. Automatización de tareas de catálogo con JavaScript.', ['6 horas ahorradas por semana', '33% menos tiempo de procesamiento']],
+    ['may. 2025 a ago. 2025', 'Vultus Cybersecurity Ecosystem', 'Prácticas en inteligencia de amenazas', 'Recopilación y análisis de indicadores de amenazas, correlación con MITRE ATT&CK e informes para apoyar la detección y la respuesta.', ['Evidencias contextualizadas para priorizar alertas', 'Hallazgos organizados en informes de inteligencia']],
+    ['may. 2024 a abr. 2025', 'Aliança Motos', 'Prácticas de TI, automatización y desarrollo', 'Aplicaciones en Python y Streamlit para procesar documentos, conciliar registros y generar informes. Automatización de tareas de catálogo con JavaScript.', ['Pasos manuales sustituidos por automatización', 'Conciliación de registros e informes en Excel']],
     ['sept. 2024 a nov. 2024', 'LIM | Laboratorio de Interacción y Medios', 'Investigador asociado', 'Puesto temporal e híbrido en diseño de software y proyectos de investigación.', ['Investigación simultánea a las prácticas en Aliança Motos']],
-    ['ago. 2023 a dic. 2023', 'IT4US Cyber Security', 'Prácticas de automatización de playbooks de seguridad', 'Automatización de procedimientos de triaje y respuesta con SOAR, scripts e integraciones REST para unos 200 eventos al día.', ['31% de las tareas repetitivas automatizadas', '21% menos tiempo en la respuesta inicial']]
+    ['ago. 2023 a dic. 2023', 'IT4US Cyber Security', 'Prácticas de automatización de playbooks de seguridad', 'Automatización de procedimientos de triaje y respuesta con SOAR, scripts e integraciones REST para normalizar eventos.', ['Flujos de triaje documentados', 'Pasos repetitivos automatizados']]
   ],
   skillsIndex: '04 / Competencias', skillsTitle: 'Base técnica para investigar y construir.',
   skills: [
@@ -177,7 +177,10 @@ const external = (url, label, cls = '') => `<a class="${cls}" href="${url}" targ
 const heading = (id, index, title, intro = '') => `<div class="section-heading"><p class="section-index">${esc(index)}</p><h2 id="${id}">${esc(title)}</h2>${intro ? `<p>${esc(intro)}</p>` : ''}</div>`;
 
 for (const [lang, d] of Object.entries(locales)) {
-  d.cv = {pt: 'Currículo', en: 'Resume', es: 'Currículum'}[lang];
+  d.cvSecurity = {pt: 'Currículo AppSec', en: 'AppSec resume', es: 'Currículum AppSec'}[lang];
+  d.cvBackend = {pt: 'Currículo Backend', en: 'Backend resume', es: 'Currículum Backend'}[lang];
+  d.cvSecurityFile = `/assets/${{pt: 'Curriculo_PT_Security_AppSec.pdf', en: 'Resume_EN_Security_AppSec.pdf', es: 'Curriculum_ES_Security_AppSec.pdf'}[lang]}`;
+  d.cvBackendFile = `/assets/${{pt: 'Curriculo_PT_Software_Backend.pdf', en: 'Resume_EN_Software_Backend.pdf', es: 'Curriculum_ES_Software_Backend.pdf'}[lang]}`;
   for (const key of ['projectIndex', 'methodIndex', 'experienceIndex', 'skillsIndex', 'educationIndex', 'contactIndex']) {
     d[key] = d[key].replace(/^\d+\s*\/\s*/, '');
   }
@@ -218,7 +221,7 @@ for (const [lang, d] of Object.entries(locales)) {
         <p class="hero-pitch">${d.pitch}</p>
         <h1 id="hero-title">Yuri de Lima <span>Application Security &amp; DevSecOps</span></h1>
         <p class="hero-location">${d.location}</p><p class="hero-facts">${d.quickFacts}</p><p class="hero-focus">${d.focus}</p>
-        <div class="hero-actions"><a class="button button-primary" href="${d.cvFile}" download>${d.cv}</a>${external(linkedin,'LinkedIn','button button-secondary')}<a class="text-link" href="#trabalhos">${d.view}</a></div>
+        <div class="hero-actions"><a class="button button-primary" href="${d.cvSecurityFile}" download>${d.cvSecurity}</a><a class="button button-secondary" href="${d.cvBackendFile}" download>${d.cvBackend}</a>${external(linkedin,'LinkedIn','button button-secondary')}<a class="text-link" href="#trabalhos">${d.view}</a></div>
       </div>
       <aside class="profile-panel" aria-label="Yuri de Lima"><div class="portrait-frame"><img src="/assets/yuri-silva.jpg" alt="${d.portrait}" width="640" height="640" fetchpriority="high"></div><div class="profile-meta"><p>João Pessoa · PB · ${lang === 'en' ? 'Brazil' : 'Brasil'}</p></div></aside>
       <div class="results-summary" aria-labelledby="results-title"><h2 id="results-title">${d.resultsTitle}</h2><dl class="results-grid">${d.signals.map(([n,t,context])=>`<div><dt>${esc(t)}</dt><dd class="result-value">${n}</dd><dd class="result-context">${esc(context)}</dd></div>`).join('')}</dl></div>
@@ -231,7 +234,7 @@ for (const [lang, d] of Object.entries(locales)) {
     <section id="experiencia" class="experience section-shell" aria-labelledby="experience-title">${heading('experience-title',d.experienceIndex,d.experienceTitle,d.experienceIntro)}<div class="timeline">${d.roles.map(([date,company,role,description,impacts])=>`<article class="timeline-item"><p class="timeline-date">${date}</p><div><p class="timeline-company">${esc(company)}</p><h3>${role}</h3><p>${esc(description)}</p><ul class="impact-list">${impacts.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div></article>`).join('')}</div></section>
     <section id="competencias" class="capabilities section-shell" aria-labelledby="capabilities-title">${heading('capabilities-title',d.skillsIndex,d.skillsTitle)}<div class="capability-grid">${d.skills.map(([t,p])=>`<article><h3>${esc(t)}</h3><p>${esc(p)}</p></article>`).join('')}</div></section>
     <section id="formacao" class="education section-shell" aria-labelledby="education-title">${heading('education-title',d.educationIndex,d.educationTitle)}<div class="education-strip"><div><h3>${d.degree}</h3><p>${d.university}</p><p>${d.expected}</p></div><div><dl class="language-list">${d.languages.map(([t,p])=>`<div><dt>${t}</dt><dd>${p}</dd></div>`).join('')}</dl></div></div></section>
-    <section id="contato" class="contact section-shell" aria-labelledby="contact-title"><p class="section-index">${d.contactIndex}</p><div class="contact-grid"><div><h2 id="contact-title">${d.contactTitle}</h2><p>${d.contactIntro}</p></div><div class="contact-actions" aria-label="${d.contactLabel}"><a class="button button-primary" href="${d.cvFile}" download>${d.cv}</a>${external(linkedin,'LinkedIn','button button-secondary')}${external(github,'GitHub','button button-secondary')}<a class="button button-secondary" href="mailto:${email}">Email</a></div></div></section>
+    <section id="contato" class="contact section-shell" aria-labelledby="contact-title"><p class="section-index">${d.contactIndex}</p><div class="contact-grid"><div><h2 id="contact-title">${d.contactTitle}</h2><p>${d.contactIntro}</p></div><div class="contact-actions" aria-label="${d.contactLabel}"><a class="button button-primary" href="${d.cvSecurityFile}" download>${d.cvSecurity}</a><a class="button button-secondary" href="${d.cvBackendFile}" download>${d.cvBackend}</a>${external(linkedin,'LinkedIn','button button-secondary')}${external(github,'GitHub','button button-secondary')}<a class="button button-secondary" href="mailto:${email}">Email</a></div></div></section>
   </main>
   <footer class="site-footer section-shell"><p>© <span data-year>2026</span> Yuri de Lima</p><p>${d.footer}</p></footer>
 </body></html>
